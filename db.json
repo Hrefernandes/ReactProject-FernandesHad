@@ -1,0 +1,97 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "name": "Conférence React",
+      "dateDebut": "10/09/2026",
+      "dateFin": "22/11/2026",
+      "location": "Paris",
+      "status": "a venir",
+      "description": "Conférence sur React et TypeScript",
+      "participants": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Hackathon Web",
+      "dateDebut": "01/01/2026",
+      "dateFin": "20/10/2026",
+      "location": "Lyon",
+      "status": "en cours",
+      "description": "Hackathon pour développeurs web",
+      "participants": [
+        2,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "3",
+      "name": "HEM test",
+      "dateDebut": "2026-01-09",
+      "dateFin": "2026-01-23",
+      "location": "Paris",
+      "status": "en cours",
+      "description": "test",
+      "participants": [
+        10
+      ]
+    }
+  ],
+  "participants": [
+    {
+      "id": "1",
+      "name": "Had Fernandes",
+      "email": "had@mail.com"
+    },
+    {
+      "id": "2",
+      "name": "Jean Martin",
+      "email": "jean@mail.com"
+    },
+    {
+      "id": "3",
+      "name": "tes",
+      "email": "testste"
+    },
+    {
+      "id": "4",
+      "name": "je suis 4",
+      "email": "4@mail.com"
+    },
+    {
+      "id": "5",
+      "name": "je suis 2",
+      "email": "2@mail.com"
+    },
+    {
+      "id": "6",
+      "name": "test j2",
+      "email": "testj2@mail.com"
+    },
+    {
+      "id": "7",
+      "name": "moi ",
+      "email": "moi@test.com"
+    },
+    {
+      "id": "8",
+      "name": "had ",
+      "email": "hadtest&mail.com"
+    },
+    {
+      "id": "9",
+      "name": "had tes",
+      "email": "ggg"
+    },
+    {
+      "id": 10,
+      "name": "had ",
+      "email": "had@mailmail.com"
+    }
+  ]
+}
