@@ -39,3 +39,5 @@ retirer les "" autour des id et relancer
 ```
 
 [http](http://localhost:5174/)
+
+manque de temps pour les filtres et l'annalyse ( nb participants... ) dû aux problèmes de pc
