@@ -26,7 +26,7 @@ export function FormAddEvent({ onSuccess }: { onSuccess: () => void }) {
     setMessage(null);
 
     try {
-      // Génère l'id
+      // génère id
       const events = await apiService.getAllEvents();
       const lastId = events.length ? Math.max(...events.map((e) => e.id)) : 0;
 
@@ -46,7 +46,7 @@ export function FormAddEvent({ onSuccess }: { onSuccess: () => void }) {
 
       setMessage({ type: "success", text: "Évènement créé avec succès 🎉" });
 
-      // Reset form
+      // reset form
       setName("");
       setDateDebut("");
       setDateFin("");

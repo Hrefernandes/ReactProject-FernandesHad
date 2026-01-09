@@ -27,7 +27,7 @@ export function RegisterForm({
     setMessage(null);
 
     try {
-      // Prends le dernier id
+      // prend le dernier id dispo
       const participants = await apiService.getAllParticipants();
       const lastId = participants.length
         ? Math.max(...participants.map((p) => p.id))
@@ -35,14 +35,14 @@ export function RegisterForm({
 
       const id = lastId + 1;
 
-      // Créer le participant
+      // créer le participant
       const participant = await apiService.createParticipant({
         id,
         name,
         email,
       });
 
-      // Mettre à jour l’événement
+      // mise à jour event
       await apiService.updateEvent({
         ...event,
         participants: [...event.participants, Number(participant.id)],

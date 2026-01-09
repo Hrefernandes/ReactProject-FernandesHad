@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { Event } from "../types/Event";
 import { apiService } from "../api/ApiService";
 
+// type de Message
 type Message = {
   type: "success" | "error";
   text: string;
@@ -27,6 +28,7 @@ export function FormEditEvent({
     setLoading(true);
     setMessage(null);
 
+    // récupération des data
     try {
       await apiService.updateEvent({
         ...event,
@@ -39,6 +41,7 @@ export function FormEditEvent({
         description,
       });
 
+      // mise en place du message
       setMessage({
         type: "success",
         text: "Évènement modifié avec succès ✅",
@@ -59,6 +62,7 @@ export function FormEditEvent({
     }
   };
 
+  // affichage du formulaire
   return (
     <div style={{ marginTop: "15px" }}>
       <h3>Modifier l'évènement</h3>

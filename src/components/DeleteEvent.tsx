@@ -3,6 +3,7 @@ import type { Event } from "../types/Event";
 import { apiService } from "../api/ApiService";
 import { SelectEventToDelete } from "./SelectEventToDelete";
 
+// type de message
 type Message = {
   type: "success" | "error";
   text: string;
@@ -20,7 +21,7 @@ export function DeleteEvent({ onSuccess }: { onSuccess: () => void }) {
     setMessage(null);
 
     try {
-      // IMPORTANT : id doit être number, pas string
+      //supréssion par id ( number )
       await apiService.deleteEvent(eventToDelete.id);
 
       setMessage({
@@ -28,7 +29,7 @@ export function DeleteEvent({ onSuccess }: { onSuccess: () => void }) {
         text: "Évènement supprimé avec succès ✅",
       });
 
-      // Rafraîchir après un petit délai pour UX
+      // rafraîchir la liste des events
       setTimeout(() => {
         onSuccess();
         setEventToDelete(null);
@@ -44,6 +45,7 @@ export function DeleteEvent({ onSuccess }: { onSuccess: () => void }) {
     }
   };
 
+  // liste des events to delete
   if (!eventToDelete) {
     return <SelectEventToDelete onSelect={setEventToDelete} />;
   }

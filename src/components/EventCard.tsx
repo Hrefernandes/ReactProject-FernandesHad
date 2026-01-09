@@ -8,6 +8,7 @@ export function EventCard({ event }: { event: Event }) {
   const [showParticipants, setShowParticipants] = useState(false);
   const [participantIds, setParticipantIds] = useState(event.participants);
 
+  // liste id participants
   const handleNewParticipant = (id: number) => {
     setParticipantIds((prev) => [...prev, id]);
   };
